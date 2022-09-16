@@ -1,4 +1,4 @@
-//Condition ~ in O(logn) time && O(1) space - Use binary search
+// Condition ~ in O(logn) time && O(1) space - Use binary search
 #include <iostream>
 using namespace std;
 
@@ -8,13 +8,13 @@ void printArray(int A[], int n){
     }
 }
 
-//uses linearSearch
+// uses linearSearch
 void lastfirst(int A[], int val, int n){
     int first, last;
     int i=0;
     int j=n-1;
 
-    //In this case the time complexity is O(n), Where O(n+n) = O(2n) = O(n)
+    // In this case the time complexity is O(n), Where O(n+n) = O(2n) = O(n)
     // space complexity is O(1)
     while(A[i] != val && i<=j){
         i++;
@@ -34,7 +34,7 @@ void lastfirst(int A[], int val, int n){
     cout<<"\nlast Occurance : "<<last;
 }
 
-//uses BinarySearch
+// uses BinarySearch
 void first(int A[], int low, int high, int val){
     int first=-1;
     int mid;
@@ -55,7 +55,7 @@ void first(int A[], int low, int high, int val){
     cout<<"First Occurance : "<<first;
 }
 
-//uses BinarySearch
+// uses BinarySearch
 void last(int A[], int low, int high, int val){
 int last=-1;
 int mid;
