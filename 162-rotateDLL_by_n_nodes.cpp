@@ -1,4 +1,4 @@
-// Programt to reverse a doubly linked list
+// Program to reverse a doubly linked list by n nodes
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -37,13 +37,13 @@ struct node* rotatebyN(struct node* head, int n){
 }
 
 // Traverses each node
-void traversel(struct node* head){
+void Traversel(struct node* head){
     struct node *p = head;
     if(head == NULL){
         return;
     }
     cout<<head->data<<" ";
-    traversel(head->next);
+    Traversel(head->next);
 }
 
 // Driver code
@@ -76,9 +76,10 @@ int main(){
     fifth->next = NULL;
     fifth->prev = fourth;
 
-    traversel(head);
+    Traversel(head);
     cout<<endl;
+    // Function call
     head = rotatebyN(head, 3);
-    traversel(head);
+    Traversel(head);
     return 0;
 }
